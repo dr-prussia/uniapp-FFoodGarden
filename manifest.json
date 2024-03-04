@@ -1,5 +1,5 @@
 {
-    "name" : "uni-app-shop",
+    "name" : "uni-app-FFood",
     "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
@@ -50,12 +50,11 @@
     /* 快应用特有相关 */
     "mp-weixin" : {
         /* 小程序特有相关 */
-        "appid" : "wxdef7ef3709c23a69",
+        "appid" : "",
         "setting" : {
-            "urlCheck" : true,
-            "checkSiteMap": false
+            "urlCheck" : false
         },
         "usingComponents" : true
     },
-    "vueVersion" : "2"
+    "vueVersion" : "3"
 }
