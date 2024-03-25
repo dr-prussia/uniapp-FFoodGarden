@@ -102,6 +102,21 @@
             url: '/pages/cate/cate'
           })
         }
+        else if(item.name === '秒杀拍') {
+          uni.navigateTo({
+            url:'/subpkg/goods_list/goods_list'
+          })
+        }
+        else if(item.name === '超市购') {
+          uni.navigateTo({
+            url:'/subpkg/goods_list/goods_list'
+          })
+        }
+        else if(item.name === '母婴品') {
+          uni.navigateTo({
+            url:'/subpkg/goods_list/goods_list'
+          })
+        }
       }
 
     }

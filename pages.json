@@ -2,25 +2,21 @@
   "pages": [{
       "path": "pages/home/home",
       "style": {
-      //   "navigationBarTitleText": "uni-app"
       }
     },
     {
       "path": "pages/cate/cate",
       "style": {
-      //   "navigationBarTitleText": "uni-app"
       }
     },
     {
       "path": "pages/cart/cart",
       "style": {
-      //   "navigationBarTitleText": "uni-app"
       }
     },
     {
       "path": "pages/my/my",
       "style": {
-      //   "navigationBarTitleText": "uni-app"
       }
     }
   ],
