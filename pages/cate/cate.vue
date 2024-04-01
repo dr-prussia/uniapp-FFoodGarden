@@ -1,5 +1,7 @@
 <template>
   <view>
+    <!-- 使用自定义的搜索组件 -->
+    <my-search @click="gotosearch()"></my-search>
     <view class="scroll-view-container">
       <!-- 左侧滑动区 -->
       <scroll-view class="left-scroll-view" scroll-y="true" :style="{height: wh + 'px'}">
@@ -48,7 +50,7 @@
     onLoad() {
       //获取当前设备屏幕可使用高度
       const sysInfo = uni.getSystemInfoSync()
-      this.wh = sysInfo.windowHeight
+      this.wh = sysInfo.windowHeight - 50
       //请求分类列表
       this.getCateList()
     },
@@ -74,6 +76,12 @@
       gotoGoodsList(item) {
         uni.navigateTo({
           url:'/subpkg/goods_list/goods_list?cid='+item.cat_id
+        })
+      },
+      // 搜索事件
+      gotosearch(){
+        uni.navigateTo({
+          url:'/subpkg/search/search'
         })
       }
     }
