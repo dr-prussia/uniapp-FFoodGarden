@@ -32,7 +32,12 @@
 </template>
 
 <script>
+  // 导入自己封装的 mixin 模块
+  import badgeMix from '@/mixins/tabbar-badge.js'
+
   export default {
+    // 将 badgeMix 混入到当前的页面中进行使用
+    mixins: [badgeMix],
     data() {
       return {
         //当前设备屏幕可使用高度
@@ -75,13 +80,13 @@
       // 跳转到商品列表界面
       gotoGoodsList(item) {
         uni.navigateTo({
-          url:'/subpkg/goods_list/goods_list?cid='+item.cat_id
+          url: '/subpkg/goods_list/goods_list?cid=' + item.cat_id
         })
       },
       // 搜索事件
-      gotosearch(){
+      gotosearch() {
         uni.navigateTo({
-          url:'/subpkg/search/search'
+          url: '/subpkg/search/search'
         })
       }
     }
