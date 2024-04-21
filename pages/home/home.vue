@@ -49,7 +49,12 @@
 </template>
 
 <script>
+  // 导入自己封装的 mixin 模块
+  import badgeMix from '@/mixins/tabbar-badge.js'
+
   export default {
+    // 将 badgeMix 混入到当前的页面中进行使用
+    mixins: [badgeMix],
     data() {
       return {
         //轮播图数据列表
@@ -105,26 +110,23 @@
           uni.switchTab({
             url: '/pages/cate/cate'
           })
-        }
-        else if(item.name === '秒杀拍') {
+        } else if (item.name === '秒杀拍') {
           uni.navigateTo({
-            url:'/subpkg/goods_list/goods_list'
+            url: '/subpkg/goods_list/goods_list'
           })
-        }
-        else if(item.name === '超市购') {
+        } else if (item.name === '超市购') {
           uni.navigateTo({
-            url:'/subpkg/goods_list/goods_list'
+            url: '/subpkg/goods_list/goods_list'
           })
-        }
-        else if(item.name === '母婴品') {
+        } else if (item.name === '母婴品') {
           uni.navigateTo({
-            url:'/subpkg/goods_list/goods_list'
+            url: '/subpkg/goods_list/goods_list'
           })
         }
       },
-      gotoSearch(){
+      gotoSearch() {
         uni.navigateTo({
-          url:'/subpkg/search/search'
+          url: '/subpkg/search/search'
         })
       }
 
@@ -169,7 +171,8 @@
     display: flex;
     padding-left: 10rpx;
   }
-  .search-box{
+
+  .search-box {
     position: sticky;
     top: 0;
     z-index: 999;
